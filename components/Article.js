@@ -104,6 +104,13 @@ function articleMaker (artObj) {
     const thirdPara = document.createElement("p");
     const expandButton = document.createElement("span");
 
+    article.appendChild(articleTitle);
+    article.appendChild(articleDate);
+    article.appendChild(firstPara);
+    article.appendChild(secondPara);
+    article.appendChild(thirdPara);
+    article.appendChild(expandButton);
+
     article.classList.add("article");
     articleDate.classList.add("date");
     expandButton.classList.add("expandButton");
