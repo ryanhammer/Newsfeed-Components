@@ -107,13 +107,13 @@ function articleMaker (artObj) {
     article.classList.add("article");
     articleDate.classList.add("date");
     expandButton.classList.add("expandButton");
-    
-    articleTitle = artObj.title;
-    articleDate = artObj.date;
-    firstPara = artObj.firstParagraph;
-    secondPara = artObj.secondParagraph;
-    thirdPara = artObj.thirdParagraph;
-    
+
+    articleTitle.textContent = artObj.title;
+    articleDate.textContent = artObj.date;
+    firstPara.textContent = artObj.firstParagraph;
+    secondPara.textContent = artObj.secondParagraph;
+    thirdPara.textContent = artObj.thirdParagraph;
+    expandButton.textContent = "+";
 /*
   <div class="article">
     <h2>{title of the article}</h2>
