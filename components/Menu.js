@@ -20,7 +20,7 @@ function menuMaker (menuArray) {
     menu.appendChild(menuList);
 
     menu.classList.add("menu");
-    
+
 /*
   <div class="menu">
     <ul>
@@ -36,13 +36,16 @@ function menuMaker (menuArray) {
   Add those items to the <ul>
 */
 
-// menuItems.forEach( (menuItem) => {
-
-// })
+menuItems.forEach( (menuItem) => {
+    let item = menuItem;
+    menuList.appendChild(item);
+});
 
 /*
   Step 3: Still inside your function, select from the DOM the menu button (the element with a class of 'menu-button').
 */
+
+
 
 /*
   Step 4: Add a click event listener to the menu button. When clicked it should toggle the class 'menu--open' on div.menu (your div with a 'menu' class).
