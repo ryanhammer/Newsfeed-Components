@@ -135,7 +135,7 @@ function articleMaker (artObj) {
   This listener should toggle the class 'article-open' on div.article.
 */
     expandButton.addEventListener("click", function(event) {
-        article.classList.add("article-open");
+        article.classList.toggle("article-open");
     });
 
 /*
