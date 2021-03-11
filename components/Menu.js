@@ -17,7 +17,10 @@ function menuMaker (menuArray) {
     const menu = document.createElement("div");
     const menuList = document.createElement("ul");
     
+    menu.appendChild(menuList);
 
+    menu.classList.add("menu");
+    
 /*
   <div class="menu">
     <ul>
